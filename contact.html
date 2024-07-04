@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff}
+            *{ box-sizing: border-box; }
+            input[type=text],select,textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid rgb(24, 1, 1);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit]{
+                background-color:  #f77062;
+                color: aliceblue;
+                padding: 12px 20px;
+                border-radius: 4px;
+                cursor: grab;
+                
+            }
+            input[type=submit]:hover{
+                background-color: #012b35;
+                transform: translateY(3px);
+
+            }
+            .container{
+                border-radius: 5px;
+                background-color: fff;
+                padding: 20px;
+            }
+            input[type=tel]{
+                color: rgb(0, 0, 0);
+                padding: 12px 20px;
+                cursor: pointer;
+                border: 1px solid rgb(37, 1, 1);
+                 border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            html{
+                background-color:  #f36454;
+            }
+            h3 {
+                color:  #f36454;
+            }
+
+            input[type=email]{
+                color: #000000;
+                padding: 12px 20px;
+                border: 1px solid rgb(37, 1, 1);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+
+            }
+        
+    </style>
+     <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+
+ <nav class="navbar">
+        <div class="navbar_container" >
+            <a href="" id="navbar__logo">SALTART </a>
+            <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                 <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">About</a>
+                </li>
+                 <li class="navbar__item">
+                    <a href="product.html" class="navbar__links">products</a>
+                </li>
+                 <li class="navbar__btn">
+                    <a href="contact.html" class="button">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3>contact form</h3>
+    <div class="container">
+        <form action="">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="firstname" placeholder="your name..">
+
+            <label for="lname" >last name</label>
+            <input type="text" id="lname" name="lastname" placeholder="your last name.." required>
+
+            <label for="country">country</label>
+            <select id="country" name="country">
+                <option value="Algeria">Algeria</option>
+                <option value="Angola">Angola</option>
+                <option value="Benin">Benin</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="canada">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo,DR">Congo,DR</option>
+                <option value="Congo">Congo</option>
+                <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Eswatini">Eswatini</option>
+                 <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Lesetho">Lesetho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Mali">Mali</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Togo">Togo</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                
+            </select>
+            <label for="contact">Phone Number</label>
+            <input type="tel" placeholder="your mobile number.." required>
+            
+            <label for="email">Email</label>
+            <input type="email" placeholder="your email.." required >
+
+<br>
+            <label for="subject">How Was Your Experience</label>
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="write something.." style="height: 200px;"></textarea>
+
+            <input type="submit" value="submit">
+           
+
+        </form>
+    </div>
+
+
+<!-- footer section -->
+
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investment</a>
+                <a href="/">Terms of services</a>
+            </div>
+              <div class="footer__link--items">
+                <h2>About us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investment</a>
+                <a href="/">Terms of services</a>
+            </div>
+        </div>
+         <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investment</a>
+                <a href="/">Terms of services</a>
+            </div>
+              <div class="footer__link--items">
+                <h2>About us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investment</a>
+                <a href="/">Terms of services</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fas faa-gem"></i>SALTART</a>
+            </div>
+            <p class="website__right">SALTART 2024. All rights reserved</p>
+            <div class="social__icons">
+                 <a href="" class="social__icon--link"
+                  target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+               <a href="" class="social__icon--link"
+                  target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+               <!-- <a href="" class="social__icon--link"
+                  target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a> -->
+               <a href="" class="social__icon--link"
+                  target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+               <a href="" class="social__icon--link"
+                  target="_blank">
+                <i class="fa fa-phone"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
