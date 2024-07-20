@@ -429,7 +429,7 @@
     width: 400px;
     border-radius: 4px;
     background-image: 
-          url('/images/salt7.JPG');
+          url('images/salt7.JPG');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -437,7 +437,7 @@
 
  .services__card:nth-child(2) {
       background-image: 
-          url("/images/salt1.JPG");
+          url("images/salt1.JPG");
    
  }
 
